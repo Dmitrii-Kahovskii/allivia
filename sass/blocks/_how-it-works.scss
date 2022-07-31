@@ -1,0 +1,128 @@
+.how-it-works {
+    padding-top: 170px;
+    padding-bottom: 50px;
+        /* Tablet */
+        @media (max-width: 1399px) {
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+}
+
+.how-it-works__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+        /* Tablet */
+        @media (max-width: 1399px) {
+            flex-direction: column;
+        }
+}
+.how-it-works__header-head {
+    max-width: 584px;
+}
+
+.how-it-works__title {
+    margin-bottom: -3px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 157%;
+}
+
+.how-it-works__subtitle {
+    font-family: 'Georgia', serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 157%;
+    color: #01996D;
+            /* Tablet */
+            @media (max-width: 1399px) {
+                line-height: 130%;
+                font-size: 40px;
+            }
+}
+
+.how-it-works__header-content {
+    padding-top: 58px;
+    max-width: 671px;
+    font-weight: 500;
+    line-height: 150%;
+            /* Tablet */
+            @media (max-width: 1399px) {
+                padding-top: 20px;
+            }
+}
+
+.how-it-works__steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,390px);
+    column-gap: 95px;
+            @media (max-width: 419px) {
+                grid-template-columns: 1fr;
+            }
+}
+
+.step {
+    max-width: 390px;
+}
+
+.step:nth-child(2) {
+    padding-top: 287px;
+            /* Tablet */
+            @media (max-width: 1399px) {
+                padding-top: 60;
+            }
+            @media (max-width: 904px) {
+                padding-top: 0;
+            }
+}
+.step:nth-child(3) {
+    padding-top: 54px;
+        /* Tablet */
+        @media (max-width: 1399px) {
+            padding-top: 0;
+        }
+}
+
+.step__heading {
+    position: relative;
+    padding-top: 135px;
+    padding-left: 88px;
+    margin-bottom: 55px;
+    font-family: 'Georgia', serif; 
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+    color: #000;
+}
+
+.step__heading::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: attr(data-number);
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 150%;
+    color: rgba(1, 153, 109, 0.2);
+}
+
+.step__text {
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #424242;
+}
+
+.step__img-wrapper {
+    position: relative;
+    padding-bottom: 126%;
+}
+.step__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}

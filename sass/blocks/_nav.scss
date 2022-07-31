@@ -1,0 +1,88 @@
+.nav {
+    // display: none;
+
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(255, 255, 255, 1);
+    // opacity: 0;
+    z-index: 9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: #01996D;
+    text-align: center;
+
+    transition: top 0.5s linear,;
+    // transition: opacity .2s ease-in, top 0s linear 0.2s,;
+}
+
+.nav a {
+    margin-right: 0;
+    margin-top: 35px;
+    font-size: 28px;
+    color: #01996D;
+}
+
+.nav.nav--active {
+    top: 0;
+    // opacity: 1;
+    transition: top 0.5s linear,;
+}
+
+.nav__top {
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $accentText;
+}
+
+.nav__list {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+
+    li {
+        margin-bottom: 40px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #01996D;
+        transition: color 0.2s ease-in;
+
+        &:hover {
+            color: $accentText;
+        }
+    }
+}
+
+.nav__login {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+
+}
+.nav__login .btn {
+    font-size: 22px;
+    line-height: 44px;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.nav__login .login-linc {
+    transition: color 0.2s ease-in;
+}
+.nav__login .login-linc:hover {
+    color:$accentText;
+}
+.btn {
+}

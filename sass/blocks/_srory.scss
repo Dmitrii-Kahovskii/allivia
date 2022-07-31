@@ -1,0 +1,121 @@
+.story {
+    padding: 229px 0 176px;
+    background-color: #245852;
+    color: #fff;
+            /* Mobile */
+            @media (max-width: 1199px) {
+                padding: 90px 0 90px;
+            }
+            @media (max-width: 991px) {
+                padding: 60px 0 60px;
+            }
+}
+
+.story__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+        /* Mobile */
+        @media (max-width: 1199px) {
+            flex-direction: column-reverse;
+        }
+}
+
+.story__cintent {
+    max-width: 580px;
+}
+
+.srory__heading {
+    font-family: 'Georgia', serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.57;
+    margin-bottom: 33px;
+            /* Mobile */
+            @media (max-width: 1199px) {
+                font-size: 40px;
+                line-height: 1.3;
+            }
+                /* Mobile */
+                @media (max-width: 991px) {
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                }
+}
+
+.srory__text {
+    margin-bottom: 57px;
+    font-weight: 600;
+    line-height: 1.57;
+                /* Mobile */
+                @media (max-width: 1199px) {
+                    margin-bottom: 40px;
+                    font-size: 20px;
+                    line-height: 1.3;
+                }
+                @media (max-width: 991px) {
+                    margin-bottom: 30px;
+                    font-size: 18px;
+                    line-height: 1.3;
+                }
+    
+}
+
+.story__video-wrapper {
+    position: relative;
+    padding-top: 57.65%;
+}
+
+.story__video {
+    max-width: 895px;
+            /* Mobile */
+            @media (max-width: 1199px) {
+                margin-bottom: 40px;
+            }
+}
+
+.story {
+}
+.container {
+}
+.story__row {
+}
+.story__cintent {
+}
+.srory__heading {
+}
+.srory__text {
+}
+.srory__btn {
+}
+.btn {
+}
+.btn--big {
+}
+.story__video {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.story__video-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+.story__video-overlay {
+
+}
+
+.story__video-overlay.hidden {
+    opacity: 0;
+}
+
+.story__video-object {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+
+}
